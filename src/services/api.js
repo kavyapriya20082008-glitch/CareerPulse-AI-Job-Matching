@@ -127,7 +127,7 @@ export async function fetchRecruiterAnalytics() {
 
 export async function runPipelineDemo(data) {
   try {
-    const res = await fetch('https://careerpulse-ai.onrender.com/pipeline-demo', {
+    const res = await fetch('https://careerpulse-ai-w7nw.onrender.com/pipeline-demo', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
