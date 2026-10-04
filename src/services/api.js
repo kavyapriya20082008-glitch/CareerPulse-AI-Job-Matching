@@ -1,5 +1,5 @@
 // API Service helper for CareerPulse
-const API_BASE = '/api';
+const API_BASE = 'https://careerpulse-backend-j0ei.onrender.com/api';
 
 export async function fetchJobs(params = {}) {
   try {
@@ -127,7 +127,7 @@ export async function fetchRecruiterAnalytics() {
 
 export async function runPipelineDemo(data) {
   try {
-    const res = await fetch('/ai-api/pipeline-demo', {
+    const res = await fetch('https://careerpulse-ai.onrender.com/pipeline-demo', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
